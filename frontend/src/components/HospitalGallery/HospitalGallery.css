@@ -1,0 +1,28 @@
+.gallery {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  grid-auto-rows: 185px;
+  gap: 14px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: var(--shadow-soft);
+}
+
+.gallery img:first-child {
+  grid-row: span 2;
+}
+
+@media (max-width: 760px) {
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery img:first-child {
+    grid-row: span 1;
+  }
+}

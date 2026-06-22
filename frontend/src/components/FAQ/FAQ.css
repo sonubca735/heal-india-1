@@ -1,0 +1,39 @@
+.faq {
+  display: grid;
+  gap: 13px;
+}
+
+.faq-item {
+  border-radius: 18px;
+  background: white;
+  box-shadow: var(--shadow-soft);
+  overflow: hidden;
+}
+
+.faq-item button {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  border: 0;
+  background: white;
+  color: var(--blue-950);
+  padding: 18px;
+  text-align: left;
+  font-weight: 900;
+}
+
+.faq-item p {
+  max-height: 0;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 18px;
+  color: var(--slate-600);
+  line-height: 1.7;
+  transition: 0.25s ease;
+}
+
+.faq-item.open p {
+  max-height: 180px;
+  padding-bottom: 18px;
+}

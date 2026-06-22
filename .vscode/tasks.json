@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Start Frontend React",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder:frontend - React}"
+      },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Start Backend Node",
+      "type": "shell",
+      "command": "npm run dev",
+      "options": {
+        "cwd": "${workspaceFolder:backend - Node Express}"
+      },
+      "problemMatcher": [],
+      "isBackground": true
+    },
+    {
+      "label": "Start Full Heal India Website",
+      "dependsOrder": "parallel",
+      "dependsOn": [
+        "Start Backend Node",
+        "Start Frontend React"
+      ],
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.treatment-card img {
+  height: 210px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.treatment-card div {
+  padding: 22px;
+}
+
+.treatment-card h3 {
+  color: var(--blue-950);
+  margin: 0 0 10px;
+}
+
+.treatment-card p {
+  line-height: 1.65;
+  color: var(--slate-600);
+}
+
+.treatment-card strong {
+  display: block;
+  color: var(--blue-800);
+  margin: 12px 0;
+}

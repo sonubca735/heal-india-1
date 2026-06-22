@@ -1,0 +1,24 @@
+{
+  "folders": [
+    {
+      "name": "frontend - React",
+      "path": "frontend"
+    },
+    {
+      "name": "backend - Node Express",
+      "path": "backend"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/node_modules": true,
+      "**/dist": true
+    }
+  },
+  "extensions": {
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "esbenp.prettier-vscode"
+    ]
+  }
+}
